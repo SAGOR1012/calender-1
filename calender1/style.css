@@ -1,0 +1,55 @@
+body {
+  /* background: linear-gradient(#94bbe9, #eeaeca); */
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  background-repeat: no-repeat;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 90vh;
+  width: 100%;
+}
+.calender_container {
+  border-radius: 40px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 4px;
+  column-gap: 4px;
+  width: 30vw;
+  height: 410px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+.date,
+.day {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  padding: 5px;
+  font-weight: bold;
+  font-size: x-large;
+  color: wheat;
+  /* border-radius: 50%; */
+}
+.date:hover {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  color: black;
+}
+.day:hover {
+  /* box-shadow: 0 25px 45px rgba(228, 59, 243, 0.3); */
+  /* background-color: red; */
+  box-shadow: 0 10px 70px wheat;
+  border-radius: 50%;
+}
